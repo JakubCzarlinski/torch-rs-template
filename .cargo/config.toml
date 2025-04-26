@@ -1,0 +1,7 @@
+[build]
+rustflags = [
+  "-C", "target-cpu=native",
+  "-D", "warnings",
+  "-C", "llvm-args=-ffast-math",
+  "-W", "clippy::pedantic"
+]

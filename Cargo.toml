@@ -1,0 +1,16 @@
+[package]
+name = "torch-rs-template"
+version = "0.1.0"
+edition = "2024"
+build = "build.rs"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+overflow-checks = false
+codegen-units = 1
+debug = false
+panic = "abort"
+
+[dependencies]
+tch = "0.20.0"
